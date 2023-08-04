@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(206, 248, 206);
+        }
+        .duniya{
+            width: 100%;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sun{
+            min-height : 100px;
+            min-width : 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name : suraj;
+            animation-duration: 20s;
+            animation-timing-function:cubic-bezier(0.85, 0.55, 0.60, 0.85);
+            animation-iteration-count: infinite;
+        }
+        .sky{
+            min-width : 700px;
+            min-height : 700px;
+            margin : auto;
+            margin-top: 80px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            border : 2px solid black;
+            animation-name: badal;
+            animation-duration: 20s;
+            animation-timing-function: lincubic-bezier(0.80, 0.55, 0.60, 0.80)ear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes suraj{
+            0%{
+                transform: 
+                rotate(0deg) 
+                translatey(260px) 
+                rotate(0deg);
+                background-color: white;
+            }
+            30%{
+                background-color: orangered;
+                border : 2px solid rgb(250, 250, 140);
+            }
+            50%{
+                background-color: rgb(255, 255, 0);
+                border : 1px solid rgb(253, 127, 81)
+            }
+            75%{
+                background-color: red;
+            }
+            95%{
+                background-color: whitesmoke;
+            }
+            100%{
+                transform: 
+                rotate(360deg) 
+                translatey(260px) 
+                rotate(-360deg);
+                background-color: whitesmoke;
+            }
+        }
+        @media screen and ( max-width : 425px ) {
+
+            #sun{
+            min-height : 75px;
+            min-width : 75px;
+            border-radius: 50%;
+            animation-duration: 10s;
+            }
+
+            .sky{
+            min-width : 90%;
+            min-height: 434px;
+            margin : auto;
+            margin-top: 40%;
+            animation-duration: 10s;
+            }
+
+            @keyframes suraj{
+            0%{
+                transform: 
+                rotate(0deg) 
+                translatey(145px) 
+                rotate(0deg);
+                background-color: white;
+            }
+            30%{
+                background-color: orangered;
+                border : 2px solid rgb(250, 250, 140);
+            }
+            50%{
+                background-color: rgb(255, 255, 0);
+                border : 1px solid rgb(253, 127, 81)
+            }
+            75%{
+                background-color: red;
+            }
+            95%{
+                background-color: whitesmoke;
+            }
+            100%{
+                transform: 
+                rotate(360deg) 
+                translatey(145px) 
+                rotate(-360deg);
+                background-color: whitesmoke;
+            }
+        }
+
+        }
+
+
+        @keyframes badal{
+                0%{
+                    box-shadow: 0px -30px 15px rgb(15, 15, 15);
+                    background-color: rgb(2, 2, 56);
+                }
+                30%{
+                    background-color: lightblue;
+                }
+                35%{
+                    box-shadow: 30px 0px 15px rgb(15, 15, 15);
+                }
+                50%{
+                    background-color: lightgoldenrodyellow;
+                }
+                55%{
+                    box-shadow: 0px 30px 15px rgb(15, 15, 15);
+                }
+                75%{
+                    background-color: rgba(235, 129, 91, 0.858);
+                }
+                80%{
+                    box-shadow: -30px 0px 15px rgb(15, 15, 15);
+                }
+                95%{
+                    background-color: rgb(2, 2, 56)
+                }
+                100%{
+                    box-shadow: 0px -30px 15px rgb(15, 15, 15);
+                    background-color: rgb(2, 2, 56)
+                }   
+            }
+    </style>
+</head>
+<body>
+    <div class="duniya">
+        <div class="sky">
+            <div id="sun"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

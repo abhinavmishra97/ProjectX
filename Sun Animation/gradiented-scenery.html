@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sun{
+            height : 100px;
+            width : 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name : suraj;
+            animation-duration: 10s;
+            animation-timing-function:cubic-bezier(0.85, 0.55, 0.60, 0.85);
+            animation-iteration-count: infinite;
+        }
+        .sky{
+            width : 700px;
+            height : 700px;
+            margin : auto;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            background-image:radial-gradient(lightblue);
+            transition: background-image;
+            border : 2px solid black;
+            animation-name: badal;
+            animation-duration: 10s;
+            animation-timing-function: lincubic-bezier(0.80, 0.55, 0.60, 0.80)ear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes suraj{
+            0%{
+                transform: 
+                rotate(0deg) 
+                translatey(260px) 
+                rotate(0deg);
+                background-color: white;
+            }
+            30%{
+                background-color: orangered;
+            }
+            50%{
+                background-color: orange;
+            }
+            75%{
+                background-color: red;
+            }
+            95%{
+                background-color: whitesmoke;
+            }
+            100%{
+                transform: 
+                rotate(360deg) 
+                translatey(260px) 
+                rotate(-360deg);
+                background-color: whitesmoke;
+            }
+        }
+        @keyframes badal{
+                0%{
+                    background-image: radial-gradient(rgb(165, 165, 255), rgb(2, 2, 56));
+                }
+                30%{
+                    background-image: radial-gradient(white, lightblue);
+                }
+                50%{
+                    background-image:radial-gradient(white,rgb(247, 247, 183));
+                }
+                75%{
+                    background-image:radial-gradient(white,rgb(241, 129, 88));
+                }
+                95%{
+                    background-image: radial-gradient(rgb(165, 165, 255), rgb(2, 2, 56));
+                }
+                100%{
+                    background-image: radial-gradient(rgb(165, 165, 255), rgb(2, 2, 56));
+                }
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="duniya">
+        <div class="sky">
+            <div id="sun"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
