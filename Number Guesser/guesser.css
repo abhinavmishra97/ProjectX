@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(207, 122, 126, 0.372);
+    min-height: 100ah;
+}
+.container{
+    padding: 20px;
+    max-width: 1050px;
+    background-color: rgba(53, 37, 135, 0.897);
+    border-radius: 24px;
+    margin:auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.displayScreen{
+    height:75vh;
+    background-color: rgb(139, 178, 212);
+    border-radius: 24px;
+    padding:20px;
+    overflow-x: hidden;
+}
+.chat{
+    margin-top: 10px;
+    height:10vh;
+    background-color: lightcyan;
+    border-radius: 24px;
+    display: flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+}
+.msgblock {
+    width: 100%;
+    height: 3.5rem;
+    word-wrap: break-word;
+}
+.message , .botmsg{
+    word-wrap: break-word;
+    border-radius: 24px 24px 0px 24px;
+    background: #dee5b0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: max-content;
+    text-align: left;
+    float:right;
+    padding: 10px;
+    font-size: 2rem;
+    min-width: 5rem;
+}
+.botmsg {
+    float:left;
+    border-radius: 24px 24px 24px 0px;
+    background-color: plum;
+}
+#typeHere{
+    width:90%;
+    border: none;
+    font-size: 2rem;
+    background-color: rgb(202, 147, 254);
+}
+#guessButton{
+    width:10%;
+    border:none;
+}
+#guessButton:hover{
+    background-color: rgb(201, 198, 198);
+}
