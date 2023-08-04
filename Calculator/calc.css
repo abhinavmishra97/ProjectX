@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.container {
+    max-width: 600px;
+    height: 70vh;
+    background-color: rgb(252, 215, 221);
+    border-radius: 5px;
+    border: 2px solid rgb(126, 100, 62);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container p {
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.screen {
+    width: 95%;
+    height: 15%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.button-section {
+    width: 95%;
+    height: 65%;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 8.35em 8.35em 8.35em 8.35em;
+    grid-gap: 10px;
+    background-color: rgba(252, 249, 249, 0);
+}
+
+.button-section button {
+    background-color: violet;
+    font-size: 2em;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(185, 53, 185);
+    box-shadow: 2px 2px 3px rgb(161, 100, 161);
+    transition: .0s ease-out;
+}
+
+.button-section button:hover {
+    /* border:2px solid rgba(128, 0, 128, 0.815); */
+    transform: scale(1.05);
+    transition: .1s ease-out;
+}
+
+.button-section button:active {
+    background-color: rgb(71, 59, 71);
+}
+
+#type {
+    width: 100%;
+    height: 100%;
+    font-size: 6em;
+}
+
+@media screen and (max-width:425px) {
+
+    .container {
+        margin: auto;
+    }
+
+    .button-section {
+        display: grid;
+        grid-template-columns: 93px 93px 93px 93px;
+        font-size: 0.8em;
+        grid-gap: 10px;
+    }
+}
