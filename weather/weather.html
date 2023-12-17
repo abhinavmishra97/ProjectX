@@ -10,25 +10,27 @@
 
     <div class="weather-screen">
         <div class="nav-bar">
-            <input type="text" placeholder="enter city name">
+            <input class="search-bar" type="text" placeholder="enter city name">
             <div class="search-img"><img src="search.png"></div>
         </div>
-        <div class="temperature">
-            <div><img src="rain.png"></div>
-            <h1>22 C</h1>
-            <h2>New York</h2>
+        <div class="temperature-details">
+            <div class="weather-image"><img id="weather-icon" src="clear.png"></div>
+            <h1 class="temperature">--°C</h1>
+            <h2 class="city-name">-- ---</h2>
         </div>
         <div class="extra-details">
             <div class="col1"> 
                 <img src="humidity.png">
-                <h4>64%<br>humidity</h4>
+                <h4 class="humidity">--% <br> humidity</h4>
             </div>
             <div class="col2"> 
                 <img src="wind.png">
-                <h4>18 km/h<br>wind speed</h4>
+                <h4 class="wind-speed">-- km/h<br>wind speed</h4>
             </div>
         </div>
     </div>
     
 </body>
+
+<script src="weather.js"></script>
 </html>
