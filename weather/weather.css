@@ -80,3 +80,8 @@ body {
     align-items: center;
     font-size: 15px;
 }
+.error-msg{
+    display: none;
+    text-align: center;
+    color: red;
+}
