@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(91, 9, 168);
+}
+
+
+.timeline{
+    position: absolute;
+    z-index: -1;
+    max-width: 10px;
+    /* height: auto; */
+    margin: 300px;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+    /* height: 0; */
+    background-color: red;
+    /* animation-name: moveline;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+    opacity: 1;
+}
+
+/* @keyframes moveline{
+    0% {
+        height: 0;
+    }   
+    100%{
+        height: 225vh;
+    }
+} */
+
+.box{
+    position: relative;
+    height:200px;
+    width: 300px;
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(20%); 
+}
+
+.box:nth-of-type(odd) {
+    transform: translateX(-115%);
+}
+
+.box img {
+    position: absolute;
+    right: -78px;
+    top: 20px;
+    z-index: 1;
+    border-radius: 50%;
+    height: 50px;
+    border: 2px solid black;
+}
+.box:nth-of-type(even) img{
+        position: absolute;
+        left: -80px;
+        z-index: 1;
+}
+
+.box:nth-of-type(odd) .myArrows{
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 30px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(206, 170, 123);
+    right: -16px;
+}
+
+.box:nth-of-type(even) .myArrows{
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 30px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(206, 170, 123);
+    left: -16px;
+}
+
+
+.box.show{
+    opacity: 1;
+}
+
+/* .timeline.visible{
+    background-color: red;
+} */
