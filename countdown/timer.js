@@ -1,4 +1,4 @@
-const endDate = "3 January 2024, 2:40:00 AM"
+const endDate = "8 January 2024, 0:00:00 AM"
 document.getElementById('end-date').innerText = endDate;
 
     const inputs = document.querySelectorAll('.timer-box');
