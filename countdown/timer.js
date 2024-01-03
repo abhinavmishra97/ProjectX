@@ -3,8 +3,6 @@ let endTime = document.getElementById('end-time').innerText;
 document.getElementById('end-date').innerText = endDate;
 document.getElementById('end-time').innerText = endTime;
 
-// document.getElementById('end-date').innerText = endDate;
-
 const inputs = document.querySelectorAll('.timer-box');
 
 // function for countdown timer
@@ -60,7 +58,6 @@ function dateSelection(endTime) {
         }
 
         ticking(endDate,endTime);
-        // setInterval(() => { ticking(endDate,endTime) }, 1000);
     })
 }
 
