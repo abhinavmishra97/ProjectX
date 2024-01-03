@@ -1,1 +1,1 @@
-see my various projects here
+Web Dev Project Corner
