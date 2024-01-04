@@ -25,7 +25,7 @@ function ticking(endDate,endTime) {
     
 }
 
-ticking();
+ticking(endDate,endTime);
 
 setInterval(() => { ticking(endDate,endTime) }, 1000);
 
@@ -51,17 +51,12 @@ function dateSelection(endTime) {
             endDate = document.getElementById('end-date').innerText;
             dateBox.classList.remove('show');
             selectDate.classList.remove('show');
-
-            ticking(endDate,endTime);
-            setInterval(() => { ticking(endDate,endTime) }, 1000);
         }
         else {
             document.getElementById('end-date').innerText = endDate;
             dateBox.classList.remove('show');
-            
-            ticking(endDate,endTime);
-            setInterval(() => { ticking(endDate,endTime) }, 1000);
         }
+            ticking(endDate,endTime);
     })
 }
 
@@ -82,7 +77,7 @@ function timeSelection() {
     document.getElementById('okBtn-time').addEventListener('click', () => {
         endTime = document.querySelector('.calender-time').value;
         if (endTime.trim() === '') {
-            document.getElementById('end-time').innerText = endTime;
+            endTime = document.getElementById('end-time').innerText;
         }
         else {
             document.getElementById('end-time').innerText = endTime;
