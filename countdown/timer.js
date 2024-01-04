@@ -3,16 +3,16 @@ let endTime = document.getElementById('end-time').innerText;
 document.getElementById('end-date').innerText = endDate;
 document.getElementById('end-time').innerText = endTime;
 
-// document.getElementById('end-date').innerText = endDate;
-
 const inputs = document.querySelectorAll('.timer-box');
 
 // function for countdown timer
 function ticking(endDate,endTime) {
     const whole = endDate + ' ' + endTime;
+
     const current = new Date();
     const final = new Date(whole);
-
+    console.log(endDate);
+    console.log(endTime);
     console.log(final);
 
     const diff = (final - current) / 1000;
@@ -45,7 +45,7 @@ function dateSelection(endTime) {
 
     // on clicking ok button after selecting date
     document.getElementById('okBtn').addEventListener('click', () => {
-        endDate = document.querySelector('.calender').value;
+    endDate = document.querySelector('.calender').value;
 
         if (endDate.trim() === '') {
             endDate = document.getElementById('end-date').innerText;
@@ -56,7 +56,8 @@ function dateSelection(endTime) {
             document.getElementById('end-date').innerText = endDate;
             dateBox.classList.remove('show');
         }
-            ticking(endDate,endTime);
+
+        ticking(endDate,endTime);
     })
 }
 
